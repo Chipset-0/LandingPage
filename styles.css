@@ -3,11 +3,26 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    font-family: "Roboto", serif;
 }
 
 ul {
     list-style-type: none;
 }
+
+.button-styled {
+
+    background-color: #3882F6;
+    color:white;
+    padding: 8px;
+    margin:16px;
+    font-size: large;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
 
 .header, .footer {
     background-color: #1F2937;
@@ -15,6 +30,7 @@ ul {
 }
 .header {
     padding: 8px;
+    display: flex;
 }
 
 .header img {
@@ -22,6 +38,13 @@ ul {
     height: 47px;
     margin-left: 80px;
     margin-right: auto;
+}
+
+.right-links {
+    display:flex;
+    justify-content: space-evenly;
+    gap:32px;
+    margin-right: 128px;
 }
 
 .content {
@@ -32,7 +55,8 @@ ul {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
-    gap:16px;
+    gap:128px;
+    padding:32px;
 }
 
 .website-intro img {
@@ -44,6 +68,11 @@ ul {
     color: white;
 }
 
+.website-intro .button-styled {
+    border: none;
+    margin: 0;
+}
+
 .information {
     align-content: center;
     display: flex;
@@ -53,23 +82,72 @@ ul {
 .information ul {
     display: flex;
     gap: 16px;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 48px;
 }
 
-.information p {
-    font-weight: bolder;
+.information-header {
+    font-weight: 900;
+    font-size:36px;
+    color: #1F2937;
 }
 
 .information-card {
     text-align: center;
+    text-wrap: wrap;
+    width: 160px;
 }
 
 .information-card img {
     height: 140px;
     width: 120px;
     text-wrap: wrap;
-    border: 10px;
-    border-color: navy;
+    border: 5px solid navy;
+    border-radius: 25px;
+}
+
+.quote {
+    display: flex;
+    text-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: light italic;
+    color: #1F2937;
+    
+}
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    width: 900px;
+    text-wrap: wrap;
+}
+
+.quote-text .reference {
+    align-self: flex-end;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-box {
+    display:flex;
+    align-items: center;
+    margin: 32px;
+    background-color: #3882F6;
+    padding: 16px;
+    border-radius: 8px;
+    color:white;
+    gap:38px;
+}
+
+.disclaimer {
+    font-size:8px;
 }
 
 .footer {
